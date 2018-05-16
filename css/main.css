@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebas_neue/bebasneue_regular-webfont.woff2') format('woff2'),
+    url('../fonts/bebas_neue/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: "Bebas Neue", "Arial", serif;
+}
+
+.bg-light {
+    background-color: #9EBE3C !important;
+}
+
+.bg-services {
+    background-color: rgba(158, 190, 60, 0.7);
+}
+
+@media (min-width: 768px) {
+    .bg-services {
+        border-left: 15px #FFF solid;
+    }
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-item .nav-link{
+    width: 150px;
+    padding: 5px 0 !important;
+    color: #FFF !important;
+    border-bottom: 2px solid #FFF;
+}
+
+.call-to-action{
+    color: #72431C;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.icon {
+    background-image: url("../img/icon.png");
+    height: 35px;
+    width: 42px;
+    display: inline-block;
+}
+
+.icon:after,
+.icon:before {
+    content: '';
+    border-bottom: 2px solid #FFF;
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+}
+
+.icon:before {
+    left: 0px;
+}
+
+.icon:after {
+    right: 0px;
+}
+
+#banner {
+    margin: 30px 0;
+    background: url("../img/banner.jpeg") no-repeat center;
+    background-size: cover;
+    min-height: 200px;
+}
+
+#banner .position-wrapper {
+    margin: -95px 0 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+#banner .title-wrapper {
+    display: inline-block;
+    min-height: 480px;
+}
+
+#banner h1 {
+    border-top: solid 2px #FFF;
+    display: inline-block;
+    font-size: 45px;
+    color: #FFF;
+    text-align: center;
+    padding: 15px 0 0;
+}
+
+#banner h1 span {
+    font-size: 82px;
+    line-height: 80px;
+}
+
+#services {
+    text-align: center;
+    padding: 25px;
+    color: #FFF;
+}
+
+#services h2 {
+    display: inline-block;
+    border-bottom: solid 2px #FFF;
+    padding: 0 10px 10px;
+}
+
+#services ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2.divider,
+h2.divider span{
+    border-bottom: 2px solid #72431C;
+}
+
+h2.divider span {
+    display: block;
+    width: 150px;
+}
