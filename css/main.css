@@ -11,18 +11,33 @@ body {
     font-family: "Bebas Neue", "Arial", serif;
 }
 
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-success {
+    background-color: #9EBE3C !important;
+    color: #FFF;
+    border: none;
+    border-radius: 0;
+    padding: 10px 25px;
+}
+
 .bg-light {
     background-color: #9EBE3C !important;
 }
 
 .bg-services {
-    background-color: rgba(158, 190, 60, 0.7);
+    width: 100%;
+    padding: 25px;
+    background: rgba(158, 190, 60, 0.7)  ;
 }
 
-@media (min-width: 768px) {
-    .bg-services {
-        border-left: 15px #FFF solid;
-    }
+.bg-services a,
+.bg-services li {
+    margin: 5px 0;
+    font-size: 1.2em;
 }
 
 .nav-item {
@@ -37,7 +52,16 @@ body {
 }
 
 .call-to-action{
-    color: #72431C;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #FFF;
+    background-color: rgba(114, 67, 28, 0.20);
+}
+
+.call-to-action:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgba(114, 67, 28, 0.30);
 }
 
 .icon-wrapper {
@@ -69,23 +93,28 @@ body {
     right: 0px;
 }
 
-#banner {
+section {
     margin: 30px 0;
+}
+
+
+.bg-hero {
     background: url("../img/banner.jpeg") no-repeat center;
     background-size: cover;
+    min-height: 480px;
+}
+#banner {
     min-height: 200px;
 }
 
 #banner .position-wrapper {
-    margin: -95px 0 0;
     text-align: center;
-    position: relative;
-    top: 50%;
+    width: 100%;
 }
 
 #banner .title-wrapper {
+    margin-top: calc(50% - 211px);
     display: inline-block;
-    min-height: 480px;
 }
 
 #banner h1 {
@@ -104,7 +133,6 @@ body {
 
 #services {
     text-align: center;
-    padding: 25px;
     color: #FFF;
 }
 
@@ -120,6 +148,10 @@ body {
     list-style: none;
 }
 
+h2.divider {
+    margin-bottom: 30px;
+}
+
 h2.divider,
 h2.divider span{
     border-bottom: 2px solid #72431C;
@@ -128,4 +160,36 @@ h2.divider span{
 h2.divider span {
     display: block;
     width: 150px;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.card-img {
+    border-radius: 0;
+}
+
+.card-header {
+    background-color: #9EBE3C !important;
+    color: #FFF;
+}
+
+#contact h3 {
+    margin-top: 25px;
+}
+
+#contact a {
+    color: #9EBE3C;
+}
+
+label {
+    color: #9EBE3C !important;
+}
+
+textarea,
+input {
+    border-color: #9EBE3C !important;
+    border-radius: 0 !important;
 }

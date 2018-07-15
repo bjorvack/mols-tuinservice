@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -43,9 +44,9 @@
             </div>
         </nav>
         <div class="container">
-            <section id="banner" class="row">
-                <div class="col-md-8">
-                    <div class="position-wrapper">
+            <section id="banner" class="row flex">
+                <div class="col-md-8 d-flex">
+                    <div class="position-wrapper bg-hero">
                         <div class="title-wrapper">
                             <h1><span>Onderhouden</span><br>van tuinen en terreinen</h1>
                             <div class="icon-wrapper">
@@ -54,38 +55,110 @@
                         </div>
                     </div>
                 </div>
-                <div id="services" class="col-md-4 bg-services">
-                    <h2>Onderhoud</h2>
-                    <ul>
-                        <li>Grasmaaien</li>
-                        <li>Snoeien van heggen en bomen</li>
-                        <li>Onkruid wieden</li>
-                        <li>Aanplanten en verwijderen van bloemen, struiken en bomen</li>
-                    </ul>
-                    <h2>Aanleg en afbraak</h2>
-                    <ul>
-                        <li>Afbraak van koten, stallen en tuinhuizen</li>
-                        <li>Plaatsen van omheining, klinkers en boordstenen</li>
-                    </ul>
-                    <a href="tel:+32499272141" class="call-to-action">
-                        +32 499 27 21 41
-                    </a>
+                <div id="services" class="col-md-4 d-flex">
+                    <div class="bg-services">
+                        <h2>Onderhoud</h2>
+                        <ul>
+                            <li>Grasmaaien</li>
+                            <li>Snoeien van heggen en bomen</li>
+                            <li>Onkruid wieden</li>
+                            <li>Aanplanten en verwijderen van bloemen, struiken en bomen</li>
+                        </ul>
+                        <h2>Aanleg en afbraak</h2>
+                        <ul>
+                            <li>Afbraak van koten, stallen en tuinhuizen</li>
+                            <li>Plaatsen van omheining, klinkers en boordstenen</li>
+                        </ul>
+                        <a href="tel:+32499272141" class="call-to-action">
+                            <i class="fas fa-phone"></i> &ensp;
+                            +32 499 27 21 41
+                        </a>
+                    </div>
                 </div>
             </section>
 
-            <section id="projecten" class="row">
-                <div class="col-md-12">
-                    <h2 class="divider">
-                        <span>Projecten</span>
-                    </h2>
+            <section id="projecten">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="divider">
+                            <span>Projecten</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./img/banner.jpeg" alt="placeholder" class="card-img">
+                            <h3 class="card-header">Placeholder</h3>
+                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur corporis debitis distinctio est illo illum nulla omnis placeat porro, quod sed unde voluptatibus! Deserunt excepturi in officia quas sed?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./img/banner.jpeg" alt="placeholder" class="card-img">
+                            <h3 class="card-header">Placeholder</h3>
+                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur corporis debitis distinctio est illo illum nulla omnis placeat porro, quod sed unde voluptatibus! Deserunt excepturi in officia quas sed?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./img/banner.jpeg" alt="placeholder" class="card-img">
+                            <h3 class="card-header">Placeholder</h3>
+                            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur corporis debitis distinctio est illo illum nulla omnis placeat porro, quod sed unde voluptatibus! Deserunt excepturi in officia quas sed?</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="contact" class="row">
-                <div class="col-md-12">
-                    <h2 class="divider">
-                        <span>Contact</span>
-                    </h2>
+            <section id="contact">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="divider">
+                            <span>Contact</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name">Naam en voornaam</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="john.doe@example.be">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Bericht</label>
+                                <textarea class="form-control" id="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success float-right">Verzenden</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Bjorn Mols</h3>
+                        <p>
+                            <a href="tel:+32499272141">
+                                <i class="fas fa-phone"></i>
+                                +32 499 27 21 41
+                            </a>
+                            <br>
+                            <a href="mailto:info@molstuinservice.be">
+                                <i class="far fa-envelope"></i>
+                                info@molstuinservice.be
+                            </a>
+                            <br>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                                Mols tuinservice
+                            </a>
+                        </p>
+                        <p>
+                            BTW BE 0875 394 019 <br>
+                            IBAN BE41 7340 4011 9310
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
