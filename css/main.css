@@ -113,8 +113,14 @@ section {
 }
 
 #banner .title-wrapper {
-    margin-top: calc(50% - 211px);
-    display: inline-block;
+    width: 352px;
+    height: 201px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -176px;
+    margin-top: -90px;
+    display: block;
 }
 
 #banner h1 {
@@ -140,6 +146,10 @@ section {
     display: inline-block;
     border-bottom: solid 2px #FFF;
     padding: 0 10px 10px;
+}
+
+#services h2:nth-child(2) {
+    padding: 5px 10px 10px;
 }
 
 #services ul {
@@ -176,6 +186,10 @@ h2.divider span {
     color: #FFF;
 }
 
+.card-body {
+    padding: 1.25rem 0;
+}
+
 #contact h3 {
     margin-top: 25px;
 }
@@ -192,4 +206,30 @@ textarea,
 input {
     border-color: #9EBE3C !important;
     border-radius: 0 !important;
+}
+
+/** MOBILE **/
+
+.navbar-light .navbar-toggler {
+    padding: 10px 15px;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .nav-item {
+        margin: 0px;
+    }
+
+    .nav-item .nav-link{
+        width: 100%;
+        padding: 15px 0 !important;
+        font-size: 1.3em;
+        border-top: 2px solid #FFF;
+        border-bottom: none;
+    }
 }
